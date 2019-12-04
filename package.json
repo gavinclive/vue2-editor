@@ -1,11 +1,8 @@
 {
-  "name": "quill2-vue2-editor",
-  "version": "2.10.2",
+  "name": "vue-quill2-editor",
+  "version": "1.0.0",
   "description": "HTML editor using Vue.js 2, and Quill.js 2.0, an open source editor",
-  "author": {
-    "name": "Gavin Clive",
-    "email": "gavinclive@gmail.com"
-  },
+  "author": "Gavin Clive <gavinclive@gmail.com>",
   "license": "MIT",
   "scripts": {
     "lint": "vue-cli-service lint",
@@ -123,13 +120,20 @@
     "html editor",
     "text editor"
   ],
-  "productName": "Vue2Editor",
+  "productName": "Quill2-Vue2Editor",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidroyer/vue2-editor.git"
+    "url": "git+https://github.com/sendmemes/vue2-editor.git"
   },
-  "sideeffects": false
+  "sideeffects": false,
+  "bugs": {
+    "url": "https://github.com/sendmemes/vue2-editor/issues"
+  },
+  "homepage": "https://github.com/sendmemes/vue2-editor#readme",
+  "directories": {
+    "doc": "docs"
+  }
 }
