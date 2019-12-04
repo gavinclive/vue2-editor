@@ -1,10 +1,10 @@
 {
-  "name": "vue2-editor",
+  "name": "quill2-vue2-editor",
   "version": "2.10.2",
-  "description": "HTML editor using Vue.js 2, and Quill.js, an open source editor",
+  "description": "HTML editor using Vue.js 2, and Quill.js 2.0, an open source editor",
   "author": {
-    "name": "David Royer",
-    "email": "droyer01@gmail.com"
+    "name": "Gavin Clive",
+    "email": "gavinclive@gmail.com"
   },
   "license": "MIT",
   "scripts": {
@@ -74,7 +74,10 @@
     "dist/vue2-editor.esm.js"
   ],
   "dependencies": {
-    "quill": "^1.3.6"
+    "quill": "^2.0.0-dev.3",
+    "quill-better-table": "^1.2.6",
+    "quill-table": "^1.0.0",
+    "quill-table-ui": "^1.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",

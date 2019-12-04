@@ -1,16 +1,18 @@
 <template>
-  <div class="quillWrapper">
-    <slot name="toolbar"></slot>
-    <div :id="id" ref="quillContainer"></div>
-    <input
-      v-if="useCustomImageHandler"
-      id="file-upload"
-      ref="fileInput"
-      type="file"
-      accept="image/*"
-      style="display:none;"
-      @change="emitImageInfo($event)"
-    />
+  <div>
+    <div class="quillWrapper">
+      <slot name="toolbar"></slot>
+      <div :id="id" ref="quillContainer"></div>
+      <input
+        v-if="useCustomImageHandler"
+        id="file-upload"
+        ref="fileInput"
+        type="file"
+        accept="image/*"
+        style="display:none;"
+        @change="emitImageInfo($event)"
+      />
+    </div>
   </div>
 </template>
 
@@ -20,6 +22,11 @@ import defaultToolbar from "@/helpers/default-toolbar";
 import oldApi from "@/helpers/old-api";
 import mergeDeep from "@/helpers/merge-deep";
 import MarkdownShortcuts from "@/helpers/markdown-shortcuts";
+import QuillBetterTable from 'quill-better-table'
+
+Quill.register({
+  'modules/better-table': QuillBetterTable
+}, true)
 
 export default {
   name: "VueEditor",
@@ -109,7 +116,20 @@ export default {
 
     setModules() {
       let modules = {
-        toolbar: this.editorToolbar.length ? this.editorToolbar : defaultToolbar
+        toolbar: this.editorToolbar.length ? this.editorToolbar : defaultToolbar,
+        table: true,
+        'better-table': {
+          operationMenu: {
+            items: {
+              unmergeCells: {
+                text: 'Another unmerge cells name'
+              }
+            }
+          }
+        },
+        keyboard: {
+          bindings: QuillBetterTable.keyboardBindings
+        }
       };
       if (this.useMarkdownShortcuts) {
         Quill.register("modules/markdownShortcuts", MarkdownShortcuts, true);
