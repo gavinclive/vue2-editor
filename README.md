@@ -107,7 +107,7 @@ You can see below that 3 parameters are passed.
 </template>
 
 <script>
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 import axios from "axios";
 export default {
   components: {
@@ -159,7 +159,7 @@ export default {
 </template>
 
 <script>
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 
 export default {
   components: {
@@ -192,7 +192,7 @@ export default {
 </template>
 
 <script>
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 
 export default {
   components: {
@@ -226,7 +226,7 @@ export default {
 </template>
 
 <script>
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 
 export default {
   components: {
@@ -254,7 +254,7 @@ export default {
 </template>
 
 <script>
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 
 export default {
   components: {
@@ -288,7 +288,7 @@ export default {
 </template>
 
 <script>
-import { VueEditor } from 'vue2-editor'
+import { VueEditor } from 'vue-quill2-editor'
 
 components: {
   VueEditor
@@ -369,7 +369,7 @@ Vue2Editor now exports Quill to assist in this process.
 </template>
 
 <script>
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 import { ImageDrop } from "quill-image-drop-module";
 import ImageResize from "quill-image-resize-module";
 
