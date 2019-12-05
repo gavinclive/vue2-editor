@@ -1,6 +1,6 @@
 # Vue2Editor
 
-> An easy-to-use but yet powerful and customizable rich text editor powered by Quill.js and Vue.js
+> An easy-to-use but yet powerful and customizable rich text editor powered by Quill.js and Vue.js. This is forked from the real vue2-editor. I only bump up Quill version to 2.0.0-dev.3 for supporting table pasting. All credits to the real author.
 
 <p align="center">
   <a href="https://www.vue2editor.com/">
@@ -23,23 +23,17 @@
 _You can use Yarn or NPM_
 
 ```bash
-npm install vue2-editor
-```
-
-**OR**
-
-```bash
-yarn add vue2-editor
+npm install vue-quill2-editor
 ```
 
 ## Usage
 
 ```javascript
 // Basic Use - Covers most scenarios
-import { VueEditor } from "vue2-editor";
+import { VueEditor } from "vue-quill2-editor";
 
 // Advanced Use - Hook into Quill's API for Custom Functionality
-import { VueEditor, Quill } from "vue2-editor";
+import { VueEditor, Quill } from "vue-quill2-editor";
 ```
 
 ## Props
